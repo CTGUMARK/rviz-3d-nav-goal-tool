@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rviz_3d_nav_goal_tool</name>
+  <version>0.0.0</version>
+  <description>
+    The rviz_3d_nav_goal_tool package is a RViz plugin tool for 3d navigation goal.
+  </description>
+
+  <maintainer email="jianle001@e.ntu.edu.sg">Bruce Chan Jian Le</maintainer>
+  <license>BSD</license>
+  <url type="website">https://github.com/BruceChanJianLe/rviz-3d-nav-goal-tool</url>
+  <url type="website">https://github.com/HKUST-Aerial-Robotics/plan_utils</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>rviz_common</depend>
+  <depend>rviz_default_plugins</depend>
+  <depend>rviz_rendering</depend>
+  <depend>qtbase5-dev</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <rviz plugin="${prefix}/rviz_plugin.xml"/>
+  </export>
+
+</package>
